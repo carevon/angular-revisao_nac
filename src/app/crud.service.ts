@@ -13,7 +13,6 @@ export class CrudService {
 
   // função que lsita usúarios
   async list(){
-    console.log(this.url)
     return await this.http.get(this.url).toPromise()
   }
 }

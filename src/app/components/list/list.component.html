@@ -1,13 +1,9 @@
 <div class="container">
   <h1>lista de usuários</h1>
   <ul>
-    <li *ngFor="let user of users" class="list-group-item d-flex justify-content-between">
-      {{user.first_name}}
-      <span class="badge">
-        <!-- <img [src]="user.avatar" alt=""> -->
-        <app-image [url]="user.avatar"></app-image>
-      </span>
-    </li>
+    <app-list-item [user]="user" *ngFor="let user of users">
+
+    </app-list-item>
   </ul>
 
 </div>

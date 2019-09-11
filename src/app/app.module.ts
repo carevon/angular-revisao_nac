@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListComponent, UserComponent, ImageComponent } from './components/index';
+import { ListComponent, UserComponent, ImageComponent, ListItemComponent } from './components/index';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     ListComponent,
     UserComponent,
-    ImageComponent
+    ImageComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
